@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Rocket Simulation</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!--<a id="a" href = "#script">link</a>-->
+    <!-- Form here -->
+    <form method="POST" action = "https://handlers.education.launchcode.org/request-parrot" id="rocketForm">
+      <label id="text1">Test Name <input type="text" name="testName" /></label>
+      <label id = "texty2Date">Test Date <input type="date" name="testDate" /></label>
+      <label id="box3Select">Rocket Type <select name="rocketType">
+        <option value = "null">Pick a rocket type</option>
+        <option value = "1">Brant</option>
+        <option value= "2">Lynx</option>
+        <option value = "3">Orion</option>
+        <option value = "4">Terrier</option>
+        </select>
+      </label>
+      <label id="inp4TextyNum">Number of Rocket Boosters <input type="number" 
+		    name="boosterCount" min="1" max="10" /></label>
+      <section id="inp5Radio">Wind Rating:
+        <label>No Wind<input type = "radio" name ="windRating" value ="0" /></label>
+        <label>Mild<input type = "radio" name ="windRating" value ="10" /></label>
+        <label>Strong<input type = "radio" name ="windRating" value ="20" /></label>
+      </section>
+      <label id="inp6Checkbox">Use production grade servers <input type="checkbox" 
+		    name="productionServers" /></label>
+      <button id="submit">Run Simulation</button>
+    </form>
+    <button id = "showConsole">Show Console Log</button>
+    <p id="consPar">Console log will display here:</p>
+    <script src="script.js" 
+    ></script>
+  </body>
+</html>
